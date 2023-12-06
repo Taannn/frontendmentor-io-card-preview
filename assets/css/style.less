@@ -33,15 +33,51 @@ button, input {
   align-items: center;
   height: 100vh;
   background-color: var(--clr-primary-200);
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.card {
-  max-width: 350px;
-  width: 90%;
-  margin-inline: auto;
-  border-radius: 1em;
-  border: 1px solid red;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    max-width: 700px;
+    width: 90%;
+    margin-inline: auto;
+    border-radius: 1em 0.8em;
+    border: 1px solid red;
+    background-color: var(--clr-neutral-100);
+    box-shadow: 0 0 2px 2px var(--clr-primary-200);
+    .card-img {
+      overflow: hidden;
+    }
+    .card-hero {
+      padding: 2em;
+      .hero-category {
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        padding-bottom: 1em;
+        color: var(--clr-neutral-300);
+        font-family: var(--ff-secondary);
+      }
+      .hero-title {
+        font-family: var(--ff-primary);
+        padding-bottom: 0.8em;
+        font-weight: var(--fw-700);
+        font-size: 2.6em;
+        color: var(--clr-neutral-800);
+        line-height: 1.1;
+      }
+      .hero-desc {
+        font-family: var(--ff-secondary);
+        color: var(--clr-neutral-300);
+        line-height: 1.8;
+        padding-bottom: 1em;
+      }
+      .hero-price {
+        span {
+          color: var(--clr-primary-400);
+          font-family: var(--ff-primary);
+          font-size: 2.6em;
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,47 @@
+// css reset
+:root {
+  --clr-primary-400: hsl(158, 36%, 37%);
+  --clr-primary-600: hsl(158, 36%, 19%);
+  --clr-primary-200: hsl(30, 38%, 92%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-300: hsl(228, 12%, 48%);
+  --clr-neutral-800: hsl(212, 21%, 14%);
+
+  --fs-primary: 0.875rem;
+  --ff-primary: 'Fraunces', serif;
+  --ff-secondary: 'Montserrat', sans-serif;
+  --fw-500: 500;
+  --fw-700: 700;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button, input {
+  font: inherit;
+}
+
+// general styles
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--clr-primary-200);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card {
+  max-width: 350px;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 1em;
+  border: 1px solid red;
+}

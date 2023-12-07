@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Taannn/frontendmentor-io-card-preview)
+- Live Site URL: [Add live site URL here](https://taannn.github.io/frontendmentor-io-card-preview/)
 
 ## My process
 

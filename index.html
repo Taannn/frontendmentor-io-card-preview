@@ -16,15 +16,23 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="card grid">
+    <div class="card grid flex-main">
       <div class="card-img">
-        <img src="assets/images/image-product-desktop.jpg" alt="a perfume image">
+        <img id="desktop-img" src="assets/images/image-product-desktop.jpg" alt="a perfume image">
+        <img id="mobile-img" src="assets/images/image-product-mobile.jpg" alt="a perfume image">
       </div>
       <div class="card-hero">
         <p class="hero-category">perfume</p>
         <h1 class="hero-title">Gabrielle Essence Eau De Parfum</h1>
         <p class="hero-desc">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
-        <p class="hero-price"><span>$149.99</span> $169.99</p>
+        <div class="hero-price flex">
+          <div class="sale-price">$149.99</div>
+          <div class="orig-price">$169.99</div>
+        </div>
+        <button class="flex-btn">
+          <img src="assets/images/icon-cart.svg" alt="">
+          Add to Cart
+        </button>
       </div>
     </div>
   </div>
@@ -33,5 +41,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/Taannn">Tristan Candelario</a>.
   </div>
+
+
 </body>
 </html>

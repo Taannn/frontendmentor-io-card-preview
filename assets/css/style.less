@@ -37,17 +37,32 @@ button, input {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  @media (max-width: 430px) {
+    .grid {
+      display: initial;
+    }
+    .wrapper {
+      height: 100vh;
+    }
+    .flex-main {
+      display: flex;
+      flex-direction: column;
+    }
+    #desktop-img {
+      display: none;
+    }
+    #mobile-img {
+      display: inline-block;
+    }
+  }
   .card {
     max-width: 700px;
     width: 90%;
     margin-inline: auto;
     border-radius: 1em 0.8em;
-    border: 1px solid red;
     background-color: var(--clr-neutral-100);
     box-shadow: 0 0 2px 2px var(--clr-primary-200);
-    .card-img {
-      overflow: hidden;
-    }
+    overflow: hidden;
     .card-hero {
       padding: 2em;
       .hero-category {
@@ -56,6 +71,10 @@ button, input {
         padding-bottom: 1em;
         color: var(--clr-neutral-300);
         font-family: var(--ff-secondary);
+        @media(max-width: 430px) {
+          font-size: 0.8em;
+          padding-bottom: 0.8em;
+        }
       }
       .hero-title {
         font-family: var(--ff-primary);
@@ -64,20 +83,68 @@ button, input {
         font-size: 2.6em;
         color: var(--clr-neutral-800);
         line-height: 1.1;
+        @media(max-width: 430px) {
+          font-size: 2em;
+          padding-bottom: 0.4em;
+        }
       }
       .hero-desc {
         font-family: var(--ff-secondary);
         color: var(--clr-neutral-300);
         line-height: 1.8;
         padding-bottom: 1em;
+        @media(max-width: 430px) {
+          font-size: 0.8em;
+          padding-bottom: 0.8em;
+          font-weight: var(--fw-500);
+        }
+      }
+      .flex {
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        @media (max-width: 430px) {
+          gap: 1em;
+        }
+      }
+      .flex-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6em;
       }
       .hero-price {
-        span {
+        padding-bottom: 1.5em;
+        .sale-price {
           color: var(--clr-primary-400);
           font-family: var(--ff-primary);
           font-size: 2.6em;
+          font-weight: var(--fw-700);
         }
+        .orig-price {
+          text-decoration: line-through;
+          color: var(--clr-neutral-300);
+          text-align: center;
+        }
+      }
+      button {
+        width: 100%;
+        color: var(--clr-neutral-100);
+        background-color: var(--clr-primary-400);
+        border: none;
+        border-radius: 0.6em;
+        padding: 0.9em 1.8em;
+        font-weight: var(--fw-700);
+        transition: all 0.2s ease;
+      }
+      button:hover {
+        background-color: var(--clr-primary-600);
+        cursor: pointer;
       }
     }
   }
 }
+#mobile-img {
+  display: none;
+}
+

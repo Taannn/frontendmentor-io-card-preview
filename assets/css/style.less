@@ -18,8 +18,10 @@
   margin: 0;
   padding: 0;
 }
+
 img {
   max-width: 100%;
+  object-fit: cover;
   display: block;
 }
 button, input {
@@ -39,20 +41,7 @@ button, input {
   }
   @media (max-width: 430px) {
     .grid {
-      display: initial;
-    }
-    .wrapper {
-      height: 100vh;
-    }
-    .flex-main {
-      display: flex;
-      flex-direction: column;
-    }
-    #desktop-img {
-      display: none;
-    }
-    #mobile-img {
-      display: inline-block;
+      grid-template-columns: 1fr;
     }
   }
   .card {
@@ -143,8 +132,5 @@ button, input {
       }
     }
   }
-}
-#mobile-img {
-  display: none;
 }
 

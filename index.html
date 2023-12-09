@@ -16,10 +16,19 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="card grid flex-main">
+    <div class="card grid">
       <div class="card-img">
-        <img id="desktop-img" src="assets/images/image-product-desktop.jpg" alt="a perfume image">
-        <img id="mobile-img" src="assets/images/image-product-mobile.jpg" alt="a perfume image">
+        <picture>
+          <source
+            srcset="assets/images/image-product-mobile.jpg"
+            media="(max-width: 430px)"
+          />
+          <source
+            srcset="assets/images/image-product-desktop.jpg"
+            media="(min-width: 601px)"
+          />
+          <img src="assets/images/image-product-desktop.jpg"/>
+        </picture>
       </div>
       <div class="card-hero">
         <p class="hero-category">perfume</p>
